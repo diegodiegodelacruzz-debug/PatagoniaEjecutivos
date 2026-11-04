@@ -1,13 +1,14 @@
 import './style.css'
 
-const WA = '5491153084471'
+const WA = '5491161593888'
 const phone = 'tel:+541149121001'
 const email = 'reservas@patagoniatransfer.com.ar'
 
 const photos = {
-  hero: 'https://images.unsplash.com/photo-1514539783223-d9395ec9052d?auto=format&fit=crop&w=2200&q=85',
-  sedan: '/images/bmw-ejecutivo.jpg',
-  van: 'https://images.unsplash.com/photo-1765461734605-34657fa04db2?auto=format&fit=crop&w=1400&q=85',
+  hero: '/images/sentra.jpg',
+  sedan: '/images/corolla.jpg',
+  premium: '/images/sentra.jpg',
+  van: '/images/mercedes-vans.jpg',
 }
 
 const services = [
@@ -100,9 +101,8 @@ app.innerHTML = `
         </div>
       </div>
       <div class="experience-stats">
-        <div><strong>24<span>/7</span></strong><small>COORDINACIÓN Y ATENCIÓN</small></div>
-        <div><strong>01</strong><small>UN SOLO CONTACTO PARA SU VIAJE</small></div>
-        <div><strong>360°</strong><small>SOLUCIONES DE MOVILIDAD</small></div>
+        <div><strong>24<span>/7</span></strong><small>ATENCIÓN Y COORDINACIÓN</small><p>Disponibilidad permanente para organizar cada traslado.</p></div>
+        <div><strong>365</strong><small>DÍAS DEL AÑO</small><p>Movilidad ejecutiva durante todo el año.</p></div>
       </div>
     </section>
 
@@ -147,19 +147,26 @@ app.innerHTML = `
       </div>
       <div class="fleet-grid">
         <article class="fleet-card fleet-large">
-          <div class="fleet-image-wrap"><img src="${photos.sedan}" alt="Sedán ejecutivo negro" loading="lazy" class="image-open"></div>
+          <div class="fleet-image-wrap"><img src="${photos.sedan}" alt="Toyota Corolla ejecutivo" loading="lazy" class="image-open"></div>
           <div class="fleet-meta"><span>01 / CATEGORÍA EJECUTIVA</span><span>↗</span></div>
           <h3>Sedanes ejecutivos</h3>
           <p>Una alternativa elegante para reuniones, traslados individuales y viajes corporativos.</p>
         </article>
+
         <article class="fleet-card">
-          <div class="fleet-image-wrap"><img src="${photos.van}" alt="Van ejecutiva Mercedes-Benz" loading="lazy" class="image-open"></div>
-          <div class="fleet-meta"><span>02 / CATEGORÍA GRUPAL</span><span>↗</span></div>
+          <div class="fleet-image-wrap"><img src="${photos.premium}" alt="Nissan Sentra premium" loading="lazy" class="image-open"></div>
+          <div class="fleet-meta"><span>02 / CATEGORÍA PREMIUM</span><span>↗</span></div>
+          <h3>Vehículos premium</h3>
+          <p>Una experiencia diferencial para servicios VIP.</p>
+        </article>
+        <article class="fleet-card">
+          <div class="fleet-image-wrap"><img src="${photos.van}" alt="Mercedes-Benz Sprinter pasajeros" loading="lazy" class="image-open"></div>
+          <div class="fleet-meta"><span>03 / CATEGORÍA GRUPAL</span><span>↗</span></div>
           <h3>Vans y grupales</h3>
           <p>Espacio y comodidad para grupos, equipos y traslados coordinados.</p>
         </article>
       </div>
-      <p class="fleet-note">Las fotografías son ilustrativas y no representan necesariamente las unidades disponibles de la empresa. Consultar flota y disponibilidad. Fotografía BMW: Damian B Oh / Wikimedia Commons (CC BY-SA 4.0). Fotografía Mercedes-Benz: Damian B Oh / Wikimedia Commons (CC BY-SA 4.0).</p>
+      <p class="fleet-note">Las fotografías son ilustrativas y no representan necesariamente las unidades disponibles de la empresa. Consultar flota y disponibilidad.</p>
     </section>
 
     <section class="corporate-section">
@@ -195,7 +202,7 @@ app.innerHTML = `
         <p>Contanos qué traslado necesitás. Nuestro equipo puede ayudarte a coordinar los detalles.</p>
         <div class="contact-details">
           <a href="${phone}"><small>TELÉFONO</small><strong>011 4912-1001</strong></a>
-          <a href="https://wa.me/${WA}" target="_blank" rel="noopener"><small>WHATSAPP</small><strong>11 5308-4471</strong></a>
+          <a href="https://wa.me/${WA}" target="_blank" rel="noopener"><small>WHATSAPP</small><strong>11 6159-3888</strong></a>
           <a href="mailto:${email}"><small>CORREO ELECTRÓNICO</small><strong>${email}</strong></a>
           <div><small>UBICACIÓN</small><strong>Guaraní 26 · Parque Patricios · CABA</strong></div>
         </div>
@@ -248,10 +255,28 @@ app.innerHTML = `
       <p>Movilidad ejecutiva.<br>Atención en cada detalle.</p>
       <a class="footer-wa" href="https://wa.me/${WA}" target="_blank" rel="noopener">Hablemos por WhatsApp ↗</a>
     </div>
+    
+    <a class="instagram-feature" href="https://www.instagram.com/grupotransfers" target="_blank" rel="noopener">
+      <span class="instagram-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="instagram-copy">
+        <small>SEGUINOS EN INSTAGRAM</small>
+        <strong>@grupotransfers</strong>
+      </span>
+      <span class="instagram-arrow">↗</span>
+    </a>
+
     <div class="footer-bottom">
       <span>© ${new Date().getFullYear()} PATAGONIA TRANSFER</span>
       <span>GUARANÍ 26 · PARQUE PATRICIOS · CABA</span>
-      <span>UNA MARCA DE GRUPO TRANSFER</span>
+      <span>UNA MARCA DE GRUPO TRANSFERS</span>
+    
+      
     </div>
   </footer>
 

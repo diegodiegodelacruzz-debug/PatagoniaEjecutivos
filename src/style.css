@@ -243,7 +243,7 @@ img {
 .hero-image {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1514539783223-d9395ec9052d?auto=format&fit=crop&w=2200&q=85');
+  background-image: url('/images/sentra.jpg');
   background-position: center 55%;
   background-size: cover;
   transform: scale(1.025);
@@ -622,7 +622,7 @@ img {
   min-height: 590px;
   background:
     linear-gradient(0deg, rgba(15,16,18,.13), rgba(15,16,18,.13)),
-    url('/images/mercedes-ejecutivo.jpg') center/cover;
+    url('/images/sentra.jpg') center/cover;
 }
 
 .airport-content {
@@ -1512,5 +1512,69 @@ img {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+
+/* INSTAGRAM DESTACADO */
+.instagram-feature {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: min(100% - 40px, 620px);
+  margin: 32px auto;
+  padding: 22px 26px;
+  color: #f5e8c8;
+  text-decoration: none;
+  background: linear-gradient(120deg, #24201b, #111);
+  border: 1px solid rgba(207, 171, 105, .65);
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.3);
+  transition: transform .25s, border-color .25s;
+}
+.instagram-feature:hover {
+  transform: translateY(-3px);
+  border-color: #e7c78e;
+}
+.instagram-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #8c624b, #b18a60, #654b75);
+}
+.instagram-icon svg {
+  width: 30px;
+  height: 30px;
+}
+.instagram-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.instagram-copy small {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #c8ad80;
+}
+.instagram-copy strong {
+  font-size: 21px;
+  letter-spacing: .4px;
+}
+.instagram-arrow {
+  margin-left: auto;
+  font-size: 27px;
+  color: #d8b77e;
+}
+@media (max-width: 480px) {
+  .instagram-feature {
+    width: calc(100% - 32px);
+    padding: 18px;
+    gap: 13px;
+  }
+  .instagram-copy strong {
+    font-size: 18px;
   }
 }

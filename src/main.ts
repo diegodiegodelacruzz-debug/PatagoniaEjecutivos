@@ -23,18 +23,12 @@ const services = [
 ]
 
 const clients = [
-  ['Supervielle', 'supervielle.png'],
   ['Raízen', 'raizen.svg'],
-  ['Coteminas', 'coteminas.png'],
-  ['IKE', 'ike.svg'],
-  ['Hospital Alemán', 'hospital-aleman.svg'],
-  ['Farmacity', 'farmacity.png'],
-  ['Clarín', 'clarin.svg'],
-  ['Banco Credicoop', 'banco-credicoop.svg'],
-  ['Calsa', 'calsa.png'],
-  ['Ministerio de Educación', 'ministerio-educacion.png'],
-  ['Citibank', 'citibank.png'],
   ['Shell', 'shell.png'],
+  ['Farmacity', 'farmacity.png'],
+  ['Citibank', 'citibank.png'],
+  ['Supervielle', 'supervielle.png'],
+
 ]
 
 const app = document.querySelector<HTMLDivElement>('#app')!
